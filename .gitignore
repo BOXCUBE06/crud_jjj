@@ -2,29 +2,22 @@
 /vendor/
 /node_modules/
 /public/build
-/storage/
+/public/hot
+
+# Keep the folders but ignore the files inside
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*.php
+/storage/framework/testing/*
+/storage/app/public/*
+/storage/logs/*.log
 
 # Environment & Sensitive files
 .env
-Homestead.json
-Homestead.yaml
-.phpunit.result.cache
-.php_cs.cache
-
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+auth.json
 
 # IDE & OS specific
 .vscode/
+.idea/
 .DS_Store
 Thumbs.db
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-/public/hot
-/public/mix-manifest.json
-
