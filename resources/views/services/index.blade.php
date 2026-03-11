@@ -29,8 +29,16 @@
                     <td>{{ $service->incident_location }}</td>
                     <td><span class="badge bg-primary">{{ $service->status }}</span></td>
                     <td>
-                        <a href="{{ route('services.edit', $service->id) }}" class="btn btn-sm btn-info">Update</a>
-                    </td>
+    <div class="d-flex gap-2">
+        <a href="{{ route('services.edit', $service->id) }}" class="btn btn-sm btn-info">Update</a>
+
+        <form action="{{ route('services.destroy', $service->id) }}" method="POST" onsubmit="return confirm('Sigurado ka ba na gusto mong burahin ito?');">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+        </form>
+    </div>
+</td>
                 </tr>
                 @endforeach
             </tbody>
