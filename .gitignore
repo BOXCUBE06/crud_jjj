@@ -1,0 +1,30 @@
+# Laravel specific
+/vendor/
+/node_modules/
+/public/build
+/storage/
+
+# Environment & Sensitive files
+.env
+Homestead.json
+Homestead.yaml
+.phpunit.result.cache
+.php_cs.cache
+
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & OS specific
+.vscode/
+.DS_Store
+Thumbs.db
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+/public/hot
+/public/mix-manifest.json
+
